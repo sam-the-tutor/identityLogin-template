@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "identityDapp_backend": {
+      "main": "src/identityDapp_backend/main.mo",
+      "type": "motoko"
+    },
+    "identityDapp_frontend": {
+      "dependencies": [
+        "identityDapp_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/identityDapp_frontend/src/index.html"
+      },
+      "source": [
+        "src/identityDapp_frontend/assets",
+        "dist/identityDapp_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
